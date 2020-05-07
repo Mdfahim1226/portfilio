@@ -1,0 +1,31 @@
+body{
+  background: #73DBF5;
+}
+.navbar{
+  border-bottom: 2px solid yellow;
+  opacity:0.8;
+}
+#home-section {
+  background-image: url("ShazimCreations (24).jpg");
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.home-inner{
+  padding-top: 150px;
+}
+.fa{
+  background-color: #fff;
+  color: blue;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+#share-section .fa{
+  background-color: #9FD3A0;
+}
+#explore-section .fa{
+  background-color: #9FD3A0;
+}
