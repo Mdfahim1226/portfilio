@@ -1,31 +1,568 @@
+/*******************
+Theme Name: Adil-Responsive personal one page template
+Author: Theme Design
+File: main css file
+**********************/
+/*******************
+1. General
+2. Navbar
+3.Home
+4.About
+5.Services
+6.portfolio
+7.Blog
+8. contact
+9. footer
+10. Responsive
+**********************/
+
+/*******************
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+**********************/
+
+
+/****General *****/
+
 body{
-  background: #73DBF5;
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Caslon Text', serif;
 }
-.navbar{
-  border-bottom: 2px solid yellow;
-  opacity:0.8;
+.section{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-#home-section {
-  background-image: url("ShazimCreations (24).jpg");
-  width: 100%;
-  min-height: 800px;
-  background-size: cover;
-  background-attachment: fixed;
+a{
+  text-decoration: none!important;
+  outline: none!important;
+}
+a:hover{
+  text-decoration: none!important;
+  outline: none!important;
+}
+h1{
+ font-weight: 700;
+}
+p{
+  font-size: 16px;
+}
+/***** NAVBAR START *****/
+nav{
+  transition: 0.3s;
+  border-color: #337ab7;
+}
+.menu{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
-.home-inner{
-  padding-top: 150px;
+.active{
+  color:  #337ab7 !important;
 }
-.fa{
-  background-color: #fff;
-  color: blue;
-  padding: 4px;
-  border-radius: 5px;
+
+.navbar-brand{
+  color: #000!important;
   font-size: 30px;
+  font-weight: 700;
 }
-#share-section .fa{
-  background-color: #9FD3A0;
+.navbar-nav li{
+  padding: 0px 8px;
+
 }
-#explore-section .fa{
-  background-color: #9FD3A0;
+.navbar-nav li a{
+  color: #000!important;
+  font-size: 18px;
+  font-weight: 700;
+
 }
+/***** NAVBAR END *****/
+
+/**** HOME START *****/
+#home{
+    background-image: url("img/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+.home-content{
+  text-align: center;
+  color: #000;
+  padding-top: 190px;
+}
+.home-content h6{
+  font-size: 20px;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  padding-bottom: 8px;
+}
+.home-content h2{
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.home-content{
+  font-weight: bold;
+}
+ .btn-custom{
+  text-decoration: none;
+  color: #fff!important;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #2AC7DB;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+ .btn-custom:hover{
+  transform: translateY(-6px);
+}
+/**** HOME END *****/
+
+/**** ABOUT START ****/
+#about h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.about-left-site img{
+  max-height: 100vh;
+  max-width:100%;
+}
+.about-right-site h5{
+ font-size: 24px;
+ padding-bottom: 10px;
+}
+.about-right-site p{
+ line-height: 24px;
+ padding-bottom: 5px;
+}
+.about-right-content{
+  padding-bottom: 10px;
+  margin-left: -40px;
+}
+.about-right-content ul li{
+list-style: none;
+padding-bottom: 10px;
+}
+.about-right-content ul li b{
+padding-right: 12px;
+}
+.about-right-site .btn-custom{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 18px;
+  color: #fff;
+  background-color: #2AC7DB;
+  font-weight: 500;
+}
+/**** ABOUT END ****/
+
+/**** SERVICE START *****/
+#services{
+  background-color: #efefef;
+}
+#services h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.service-content{
+  margin-bottom: 30px;
+  border: 1px solid #2AC7DB;
+  padding: 20px;
+  transition: 0.3s;
+}
+.service-content:hover{
+  box-shadow: 0 0 13px rgba(0,0,0,0.6);
+  transform: translateY(-5px);
+}
+.service-content .icon{
+  font-size: 35px;
+  color: #2AC7DB;
+}
+.service-content h5{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #555;
+}
+/**** SERVICE END *****/
+
+/**** SKILL START ****/
+#skill h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.skill-left-site h6{
+  font-size: 18px;
+  color: #555;
+}
+.skill-right-site h6{
+  font-size: 18px;
+  color: #555;
+}
+.progress{
+  max-width: 470px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+.progress-bar{
+ border-radius: 50px;
+}
+/**** SKILL END ****/
+
+/***** PORTFOLIO START *****/
+#portfolio{
+  background-color: #efefef;
+  height: auto;
+}
+#portfolio h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.img-max-width{
+  width: 25%;
+}
+.portfolio-title{
+  font-size: 21PX;
+  word-spacing: 2PX;
+  font-weight: 700;
+  letter-spacing: 1PX;
+}
+.port-folio-sub-title{
+  color: #888888;
+  font-size: 17px;
+  word-spacing: 1px;
+  padding-top: 10px;
+}
+.container-filter{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+}
+.container-filter li{
+  list-style: none;
+  display: inline-block;
+}
+.container-filter a{
+  color: #2AC7DB;
+  display: block;
+  font-size: 11px;
+  border: 1px solid #2AC7DB;
+  padding: 0px 15px;
+  margin: 5px 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  line-height: 30px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  border-radius: 3px;
+}
+.container-filter a:hover{
+  color: #fff!important;
+  background-color: #2AC7DB;
+  border: 1px solid #2AC7DB;
+}
+.item-box{
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.item-box a{
+  display: inline-block;
+}
+.item-box:hover .item-mask{
+  opacity: 1;
+  visibility: visible;
+}
+.item-box:hover .item-caption{
+  opacity: 1;
+  bottom: 30px;
+}
+.item-box:hover .item-container{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 2s cubic-bezier(0.23,1,0.32,1) 0s;
+          transition: all 2s cubic-bezier(0.23,1,0.32,1) 0s;
+  width: 100%;
+}
+.item-container{
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 2s cubic-bezier(0.23,1,0.32,1) 0s;
+          transition: all 2s cubic-bezier(0.23,1,0.32,1) 0s;
+  width: 100%;
+}
+.item-mask{
+  background: none repeat scroll 0 0 rgba(242,242,242,0.9);
+  position: absolute;
+  -webkit-transition: all 0.5 ease-in-out 0s;
+          transition: all 0.5s ease-in-out 0s;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.item-mask p{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+}
+.item-mask .item-caption{
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: all 0.5 ease-in-out 0s;
+          transition: all 0.5s ease-in-out 0s;
+}
+/***** PORTFOLIO END *****/
+
+/***** BLOG START ******/
+#blog h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.blog-content img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.blog-content p{
+  margin-top: 45px;
+  margin-bottom: 20px;
+  background-color: #efefef;
+  padding: 15px;
+  border-radius: 10px;
+  color: #555;
+}
+.blog-content h5{
+ color: #555;
+ font-weight: 700;
+}
+.blog-content h6{
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.carousel-indicators li{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #2AC7DB;
+}
+/***** BLOG END ******/
+
+/**** CONTACT START *****/
+#contact{
+  background-color: #efefef;
+}
+#contact h1{
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.contact-left-site{
+  padding-top: 80px;
+}
+.contact-left-site .icon{
+  font-size: 32px;
+  margin-bottom: 28px;
+  color: #2AC7DB;
+}
+.contact-left-site h6{
+  font-size: 18px;
+  color: #555;
+  padding-top: 6px;
+}
+
+.contact-right-site{
+  margin-top: 75px;
+}
+.form-control{
+  height: 46px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: none;
+}
+textarea.form-control{
+  height: auto;
+  background: none;
+}
+.form-control:focus{
+  border: 1px solid #2AC7DB;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+}
+.contact-right-site .btn-custom{
+   margin-top: 20px;
+   text-decoration: none;
+   color: #fff!important;
+   font-weight: 500;
+   font-size: 18px;
+   background-color: #2AC7DB;
+   padding: 10px 45px;
+   transition: 0.3s;
+}
+/**** CONTACT END *****/
+
+/**** FOOTER START ****/
+#footer{
+  background-color: #343A40;
+  padding-top: 80px;
+  padding-top: 50px;
+}
+.footer-content{
+  margin-bottom: 35px;
+}
+.footer-content h5{
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.footer-content p{
+  color: #818d9c!important;
+}
+.footer-content ul li{
+  padding-bottom: 8px;
+}
+.footer-content ul li a{
+  color: #818d9c!important;
+  text-decoration: none;
+}
+.footer-content h6{
+  color: #818d9c!important;
+  font-size: 15px;
+}
+.footer-content .icon-facebook{
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-color: #4E71A8;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.footer-content .icon-twitter{
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-color: #55ACEE;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.footer-content .icon-google{
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-color: #D6492F;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.footer-content-one p{
+  color: #818d9c!important;
+  padding-top: 50px;
+  text-align: center;
+}
+/**** FOOTER END ****/
+
+
+
+
+/***** Responsive start ****/
+@media(max-width: 600px){
+  nav{
+    background-color: #fff;
+  }
+  .navbar-nav li a{
+    text-align: center;
+  }
+  #home{
+      background-image: url("img/1.jpg");
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+
+  }
+  .home-content{
+    text-align: center;
+    color: #000;
+    padding-top: 150px;
+  }
+
+}
+@media(max-width: 768px){
+  nav{
+    background-color: #fff;
+  }
+  .navbar-nav li a{
+    text-align: center;
+  }
+  #home{
+      background-image: url("img/1.jpg");
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+
+  }
+  .home-content{
+    text-align: center;
+    color: #000;
+    padding-top: 190px;
+  }
+
+}
+
+@media(max-width: 1024px){
+  #home{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home-content{
+    text-align: center;
+    color: #000;
+    padding-top: 220px;
+  }
+}
+
+
+/***** Responsive end ****/
